@@ -1,1 +1,6 @@
-#Welcome to address book program
+#Usecase1
+
+create database addressbookservicedb;
+show databases;
+use addressbookservicedb;
+
