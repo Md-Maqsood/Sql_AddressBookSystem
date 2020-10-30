@@ -61,4 +61,3 @@ insert into address_book(addressbook_name, type, firstname, lastname, address, c
 ('Book1','Family','Jeff', 'Bezoss', 'xyz', 'San Francisco', 'California', 120012, 1234567890, 'jeff@gmail.com'),
 ('Book1','Friend','Jeff', 'Bezoss', 'xyz', 'San Francisco', 'California', 120012, 1234567890, 'jeff@gmail.com');
 
-
