@@ -55,4 +55,10 @@ alter table address_book add type varchar(150) after addressbook_name;
 
 select count(id) from address_book where type='Family';
 
+#UseCase11
+
+insert into address_book(firstname, lastname, address, city, state, zip, phonenumber, email) values
+('Book1','Family','Jeff', 'Bezoss', 'xyz', 'San Francisco', 'California', 120012, 1234567890, 'jeff@gmail.com'),
+('Book1','Friend','Jeff', 'Bezoss', 'xyz', 'San Francisco', 'California', 120012, 1234567890, 'jeff@gmail.com'),
+
 
