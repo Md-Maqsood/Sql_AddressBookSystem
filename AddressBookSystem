@@ -38,3 +38,7 @@ delete from address_book where firstname='Jeff';
 
 select * from address_book where city='New York City' or state= 'New York';
 
+#Usecase7
+
+select count(id) from address_book where city='New York City' or state= 'New York';
+
