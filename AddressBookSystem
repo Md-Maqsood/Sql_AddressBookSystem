@@ -42,3 +42,6 @@ select * from address_book where city='New York City' or state= 'New York';
 
 select count(id) from address_book where city='New York City' or state= 'New York';
 
+#Usecase8
+
+select * from address_book where city='New York City' order by firstname;
