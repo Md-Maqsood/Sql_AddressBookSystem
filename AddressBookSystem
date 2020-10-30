@@ -30,3 +30,7 @@ insert into address_book(firstname, lastname, address, city, state, zip, phonenu
 
 update address_book set address='jkl', phonenumber=5641237894 where firstname='Jeff';
 
+#Usecase5
+
+delete from address_book where firstname='Jeff';
+
