@@ -26,3 +26,7 @@ insert into address_book(firstname, lastname, address, city, state, zip, phonenu
 ('Mark', 'Zukerberg', 'abc', 'New York City', 'New York', 123456, 9874563210, 'mark@gmail.com'),
 ('Satya', 'Nadela', 'pqr', 'Los Angeles', 'California', 120546, 5463217890, 'satya@gmail.com');
 
+#Usecase4
+
+update address_book set address='jkl', phonenumber=5641237894 where firstname='Jeff';
+
