@@ -45,3 +45,14 @@ select count(id) from address_book where city='New York City' or state= 'New Yor
 #Usecase8
 
 select * from address_book where city='New York City' order by firstname;
+
+#UseCase9
+
+alter table address_book add addressbook_name varchar(150) after id;
+alter table address_book add type varchar(150) after addressbook_name;
+
+#UseCase10
+
+select count(id) from address_book where type='Family';
+
+
