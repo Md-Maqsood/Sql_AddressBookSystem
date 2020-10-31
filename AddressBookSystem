@@ -120,6 +120,11 @@ insert into person (firstname, lastname, type_id) values
 insert into person (firstname, lastname, type_id) values
 ('Satya', 'Nadela', 'fm');
 
+insert into person_addressbook (contact_id, book_id) values (1,1);
+insert into person_addressbook (contact_id, book_id) values (2,2);
+insert into person_addressbook (contact_id, book_id) values (3,1);
+insert into person_addressbook (contact_id, book_id) values (2,1);
+
 insert into address_details (contact_id, address, city, state, zip) values
 (1, 'xyz', 'San Francisco', 'California', 120012);
 insert into address_details (contact_id, address, city, state, zip) values
@@ -133,3 +138,19 @@ insert into contact_details (contact_id, phonenumber, email) values
 (2, 9874563210, 'mark@gmail.com');
 insert into contact_details (contact_id, phonenumber, email) values
 (3, 5463217890, 'satya@gmail.com');
+
+#UseCase13
+
+select * from (person inner join address_details on person.contact_id=address_details.contact_id)
+where city='New York City' or state= 'New York';
+
+select count(person.contact_id) from (person inner join address_details on person.contact_id=address_details.contact_id)
+where city='New York City' or state= 'New York';
+
+select * from person inner join address_details on person.contact_id=address_details.contact_id 
+inner join contact_details on address_details.contact_id=contact_details.contact_id
+where city='San Francisco' order by firstname;
+
+select count(contact_id) from 
+person join contact_type on person.type_id=contact_type.type_id
+where type='Family';
